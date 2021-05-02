@@ -2,18 +2,18 @@
 
 Proposal - Task Delegation
 
-1. MIJANUR
+1. RAHMAN MD MIJANUR (1631849)
 
 - Introduction
 - References
 
-2. ZAWAD
+2. ZAWAD WASIK AHMED (1912485)
 
 - Objective
 - Features and functionalities
 - References
 
-3. SHEILLA
+3. SHEILLA CHAIRIANDIA (1810502)
 
 - ERD
 - References
@@ -44,7 +44,7 @@ Project Development - Task Delegation
 
 #### 1.0 Introduction
 
-> Intro.....
+>  In today’s age of fast food and take-out, many restaurants have chosen to focus on quick preparation and speedy delivery of orders rather than offering a huge dining experience. On the other hand, people nowadays have also chosen online platforms to make life easier and faster. So, our project, the online food ordering system, is a technique of ordering foods online and get the order at the door step. The main advantage of this system is that it greatly simplifies the ordering process for both the customer and the seller. When the customer visits the web page, they are presented with an interactive and up-to-date menu, complete with all available options and dynamically adjusting prices based on the selected options. To order food from the web application, they just need to register and login their accounts. After that, they can make a selection and the item is then added to their cart, which the customer can review the details of at any time before checking out. Customer then also can check their orders and update or cancel their order. Within this application, all items in the order are displayed, along with their corresponding options and delivery details, in a concise and easy to read manner.
 
 #### 2.0 Objective
  
