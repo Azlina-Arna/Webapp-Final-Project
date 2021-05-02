@@ -13,13 +13,12 @@ Proposal - Task Delegation
 - Features and functionalities
 - References
 
-
 3. SHEILLA
 
 - ERD
 - References
 
-4. AZLINA
+4. AZLINA ARNA NUR (1630558)
 
 - Define views, controllers, routes and models 
 - References
@@ -60,10 +59,10 @@ Project Development - Task Delegation
 #### 3.0 Features and functionalities
 
    <ul>
-   <li>View food menu and check detils</li>
+   <li>View food menu and check details</li>
    <li>Add drop item into cart</li>
    <li>Calculate total price for billing</li>
-   <li>Confirm order with billing and delivery adress</li>
+   <li>Confirm order with billing and delivery address</li>
    <li>Update or cancel order</li>
    </ul>
  
@@ -103,14 +102,14 @@ Project Development - Task Delegation
    <br>
    <li> CartController.php : </li>
    <ul> 
-   <li> Allows user to add or remove food from food menu</li>
-   <li> Allows user to add quantity and calculate the food price based on that</li>
+   <li> Allows user to add or remove food from cart</li>
+   <li> Allows user to add quantity and calculate the food price</li>
    </ul>
    <br>
    <li> CheckoutController.php :
    <ul>
-   <li> Calculate total bills of the foods.</li>
-   <li> get user delivery and billing adress</li>
+   <li> Calculate total bills of the foods</li>
+   <li> Get user delivery and billing adress</li>
    <li> Allow user to confirm order</li>
    </ul>
    <br>
@@ -132,7 +131,7 @@ Project Development - Task Delegation
    <li>Route for return views for checkout page and checkout functions corresponds with CheckoutController.php</li>
    <li>Route for return views for Details page and details function corresponds with DetailsController.php
    </li>
-   <li>Route for return views for register and login page</li>
+   <li>Route for return views for register and login page corresponds with user authentication</li>
    </ul>
    
  <br>
@@ -141,9 +140,9 @@ Project Development - Task Delegation
 
    <ul>
    <li> Customer has one-to-many relationship with orders (One customer can have many orders)</li>
-   <li> Order has one-to-many relationship with cart (many food from the cart can be selected for one order
+   <li> Order has one-to-many relationship with cart (many food from the cart can be selected for one order)
    </li>
-   <li> Cart has many to many relationship with food (Many food can be added in cart).
+   <li> Cart has one-to-many relationship with food (Many food can be added in cart)
    </ul>
 
 <br> 
