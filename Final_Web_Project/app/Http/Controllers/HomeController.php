@@ -27,9 +27,9 @@ class HomeController extends Controller
         $data= Menu::all();
         return view('home',['menus'=>$data]);
     }
-    function detail($id)
+    function details($id)
     {
-        $data = Product::find($id);
-        return view('detail'.['menu'=>$data]);
+        $data = Menu::find($id);
+        return view('detail', ['menu'=> $data]);
     }
 }

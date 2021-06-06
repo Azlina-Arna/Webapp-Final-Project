@@ -7,7 +7,7 @@
 @foreach ($menus as $item)
   <div class="col-sm-6">
   <div class="card">
-  <a href="detail">
+  <a href="detail/{{$item['id']}}">
     <img class="card-img-top" src="{{$item['gallery']}}">
     <div class="card-body">
       <h5 class="card-title">{{$item['name']}}</h5>

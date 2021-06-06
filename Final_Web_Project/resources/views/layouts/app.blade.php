@@ -95,5 +95,21 @@
     width:500px;
     margin: 10px;
 }
+.detail-img{
+    height: 580px;
+    width: 550px;
+}
+.content{
+    padding: 20px;
+}
+.btn-primary{
+    width: 200px;
+    height: 40px;
+    margin-right: 20px;
+}
+h2{
+    color: #051746;
+    font-weight: bold;
+}
 </style>
 </html>
