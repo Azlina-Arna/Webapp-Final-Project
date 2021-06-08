@@ -32,5 +32,8 @@ class HomeController extends Controller
         $data = Menu::find($id);
         return view('detail', ['menu'=> $data]);
     }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
