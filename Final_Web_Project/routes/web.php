@@ -22,8 +22,3 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index']);
 Route::get("detail/{id}",[HomeController::class, 'details']);
-<<<<<<< Updated upstream
-=======
-Route::get("search",[HomeController::class, 'search']);
-Route::post("add_to_cart",[HomeController::class, 'addToCart']);
->>>>>>> Stashed changes
