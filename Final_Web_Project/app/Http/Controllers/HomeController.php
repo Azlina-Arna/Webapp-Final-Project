@@ -32,4 +32,15 @@ class HomeController extends Controller
         $data = Menu::find($id);
         return view('detail', ['menu'=> $data]);
     }
+
+    public function orders(){
+        return view('orders');
+    }
+
+    public function destroy($orderID){
+        $orders= Orders::fine($orderID);
+        $orders->delete();
+        return view('orders');
+    }
+  
 }

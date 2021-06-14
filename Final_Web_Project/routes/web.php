@@ -22,3 +22,5 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index']);
 Route::get("detail/{id}",[HomeController::class, 'details']);
+Route::get('/orders',[App\Http\Controllers\HomeController::class, 'orders'])->name('orders');
+Route::get('/orders/{id}',[App\Http\Controllers\HomeController::class, 'destroy'])->name('destroy');
