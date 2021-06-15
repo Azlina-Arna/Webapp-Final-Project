@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Menu;
+use App\Models\Cart;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -31,6 +33,27 @@ class HomeController extends Controller
     {
         $data = Menu::find($id);
         return view('detail', ['menu'=> $data]);
+    }
+
+    function addToCart(Request $req){
+        $cart= new Cart;
+        $cart->menu_id= $req->menu_id;
+        $cart->save();
+        return redirect('/home');
+    }
+
+    function cartlist(){
+        $menus = DB::table('cart')
+        ->join('menus','cart.menu_id','=','menus.id')
+        ->select('menus.*','cart.id as cart_id')
+        ->get();
+        return view('cartlist',['menus'=>$menus]);
+    }
+
+    function removeCart($id){
+        Cart::destroy($id);
+        return redirect('cartlist');
+
     }
 
     public function orders(){

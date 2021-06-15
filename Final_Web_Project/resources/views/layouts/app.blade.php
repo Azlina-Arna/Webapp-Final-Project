@@ -32,10 +32,10 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active" aria-current="page" href="/home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Cart()</a>
+                      <a class="nav-link" href="/cartlist">Cart</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="/orders">Orders</a>
@@ -110,6 +110,11 @@
 h2{
     color: #051746;
     font-weight: bold;
+}
+.trending-image{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
 }
 </style>
 </html>
