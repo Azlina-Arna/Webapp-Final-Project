@@ -10,6 +10,5 @@ class Orders extends Model
     use HasFactory;
     
     protected $primaryKey ='orderID';
-    protected $fillable =['orderDate','details'];
-    public $timestamps =false;
+    public $fillable =['orderDate','details'];
 }

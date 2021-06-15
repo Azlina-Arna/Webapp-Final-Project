@@ -25,5 +25,5 @@ Route::get("detail/{id}",[HomeController::class, 'details']);
 Route::post("add_to_cart", [HomeController::class, 'addToCart']);
 Route::get("/cartlist",[HomeController::class, 'cartlist']);
 Route::get("removecart/{id}",[HomeController::class, 'removeCart']);
-Route::get('/orders',[App\Http\Controllers\HomeController::class, 'orders'])->name('orders');
-Route::get('/orders/{id}',[App\Http\Controllers\HomeController::class, 'destroy'])->name('destroy');
+Route::get('/orderspage',[App\Http\Controllers\HomeController::class, 'orderspage']);
+Route::get('destroyOrder/{orderID}',[App\Http\Controllers\HomeController::class, 'destroyOrder']);
