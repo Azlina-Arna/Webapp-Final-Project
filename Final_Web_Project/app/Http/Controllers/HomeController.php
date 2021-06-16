@@ -56,14 +56,16 @@ class HomeController extends Controller
 
     }
 
-    public function orders(){
-        return view('orders');
+    public function orderspage(){
+        $orders = DB::table('orders')
+        ->select('orderID','orderDate','details')
+        ->get();
+        return view ('orderspage',['orders'=>$orders]);
     }
 
-    public function destroy($orderID){
-        $orders= Orders::fine($orderID);
-        $orders->delete();
-        return view('orders');
+    public function destroyOrder($orderID){
+        Orders::destroy($orderID);
+        return redirect('orderspage');
     }
   
 }

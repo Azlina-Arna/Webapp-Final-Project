@@ -38,7 +38,7 @@
                       <a class="nav-link" href="/cartlist">Cart</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/orders">Orders</a>
+                      <a class="nav-link" href="/orderspage">Orders</a>
                     </li>
                     </ul>
 
