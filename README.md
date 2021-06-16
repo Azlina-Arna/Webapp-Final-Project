@@ -28,12 +28,24 @@ Proposal - Task Delegation
 Project Development - Task Delegation
 
 1. Azlina
+- Set up project and blade templating
+- User Authentication
+- Route,Controller,View for Home Page 
+- Route, controller,View for Product Details Page
+- Database for Products (model, seeder, migration)
 
 2. Sheilla
+- Crud function to show user oder details page and update and cancel order funcion
+- Route, Controller, View for crud function
+- Database for order table
 
 3. Zawad
+- Route, Controller, View for Cartlist page
+- Database for Cart (model, migration, functions, join table, remove from table, pull the data from table into view)
 
 4. Mijanur
+- Route, Controller, View for order page
+- Calculate total price from cart
 
 ---
 
@@ -81,11 +93,10 @@ Project Development - Task Delegation
 
    <ul>
    <li>home.blade.php : Displays food menu as a Home page once user successfully register and login</li>
-   <li>login.blade.php : Displays User Log in page</li>
-   <li>register.blade.php : Displays User Registeration page</li>
-   <li>cart.blade.php : Displays Cart page where added food with add and drop button</li>
+   <li>detail.blade.php : Displays each menu details and user can buy now and add to cart after check the details</li>
+   <li>cartlist.blade.php : Displays Cart page where added food with add and drop button</li>
    <li>checkout.blade.php : Displays foods with details from cart and calculate total price with a form for billing and delivery address to confirm order</li>
-   <li>details.blade.php : Displays order history with update and cancel button</li>
+   <li>order.blade.php : Displays order history with update and cancel button</li>
    </ul>
    
 <br>
@@ -95,33 +106,12 @@ Project Development - Task Delegation
    <ul>
    <li> HomeController.php :</li>
    <ul>
-   <li> Allows user data from registeration form to be passed to the database</li>
-   <li> Allows user data to be retrieved from database to proceed user login to Home page</li>
    <li> Allows user to check food menu by retriving food menu from database</li>
+   <li> Allows user to check cartlist by retriving cartlist menu from database</li>
+   <li> Allows user to remove and add food menu to the cart</li>
+   <li> Allows user to cancel and update orders</li>
    </ul>
-   <br>
-   <li> CartController.php : </li>
-   <ul> 
-   <li> Allows user to add or remove food from cart</li>
-   <li> Allows user to add quantity and calculate the food price</li>
-   </ul>
-   <br>
-   <li> CheckoutController.php :
-   <ul>
-   <li> Calculate total bills of the foods</li>
-   <li> Get user delivery and billing adress</li>
-   <li> Allow user to confirm order</li>
-   </ul>
-   <br>
-   <li> DetailsController.php :
-   <ul>
-   <li> Allow user to check order details by retriving data from database</li>
-   <li> Allow user to update and cancel order</li>
-   </ul>
-
-   </ul>
-  
- <br>
+   
 
 **Routes :**
 
